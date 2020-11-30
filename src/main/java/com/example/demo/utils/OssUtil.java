@@ -13,5 +13,6 @@ public class OssUtil {
 
     private static final String KEY_DI = "Lafvdggasdg5h";
     private static final String NAME = "aa";
+    private static final String DZG = "dzg";
 
 }
