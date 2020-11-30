@@ -11,6 +11,6 @@ package com.example.demo.utils;
 public class OssUtil {
 
 
-
+    private static final String KEY_DI = "Lafvdggasdg5h";
 
 }
