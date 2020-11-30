@@ -21,8 +21,8 @@ public class User implements Serializable {
     private String username;
     private String password;
 
-    private String createTime;
-    private String updateTime;
+    private Date createTime;
+    private Date updateTime;
 
 
     public static void main(String[] args) {
