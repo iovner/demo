@@ -27,6 +27,8 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    private String name;
+
     @Autowired
     private Properties properties;
 
