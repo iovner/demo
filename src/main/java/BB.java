@@ -7,6 +7,8 @@
  * @Author：duzhiguang@bjpowernode.com
  */
 public class BB {
+  public static String f1(){
+  }
 
     public static String f2(){
         return "f2";
