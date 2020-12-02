@@ -8,4 +8,5 @@
  */
 public class BB {
     private String name;
+    private String age;
 }
