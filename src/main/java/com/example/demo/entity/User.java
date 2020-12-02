@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,6 +16,7 @@ import java.util.Date;
  * @Author：duzhiguang@bjpowernode.com
  */
 @Data
+@AllArgsConstructor
 public class User implements Serializable {
 
     private Long id;
@@ -25,7 +27,4 @@ public class User implements Serializable {
     private Date updateTime;
 
 
-    public static void main(String[] args) {
-        System.out.println(new Date());
-    }
 }

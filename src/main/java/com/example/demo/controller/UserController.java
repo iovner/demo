@@ -4,6 +4,7 @@ import com.example.demo.config.EnvConfig;
 import com.example.demo.config.Properties;
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
+import com.example.demo.utils.MyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,6 +33,7 @@ public class UserController {
     @Autowired
     private Properties properties;
 
+
     @RequestMapping("/getAllUser")
     public List<User> getAllUser(){
         List<User> allUser = userService.getAllUser();
@@ -54,5 +56,9 @@ public class UserController {
         return result;
     }
 
+    @RequestMapping("getAllUserByMyUtil")
+    public List<User> getAllUserByMyUtil(){
+        return MyUtil.getAllUser();
+    }
 
 }
