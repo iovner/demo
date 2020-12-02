@@ -7,6 +7,6 @@
  * @Author：duzhiguang@bjpowernode.com
  */
 public class AA {
-    
+    private String s1;
     
 }
