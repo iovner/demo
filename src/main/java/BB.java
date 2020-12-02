@@ -7,4 +7,6 @@
  * @Author：duzhiguang@bjpowernode.com
  */
 public class BB {
+  public static String f1(){
+  }
 }
