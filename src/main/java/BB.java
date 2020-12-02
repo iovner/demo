@@ -7,5 +7,5 @@
  * @Author：duzhiguang@bjpowernode.com
  */
 public class BB {
-
+    private String name;
 }
