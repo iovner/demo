@@ -10,4 +10,6 @@ public class BB {
     private String name;
     private String age;
     private String s1;
+
+    private String s2;
 }
