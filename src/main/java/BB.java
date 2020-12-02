@@ -9,4 +9,5 @@
 public class BB {
     private String name;
     private String age;
+    private String s1;
 }
