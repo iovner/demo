@@ -11,4 +11,5 @@ public class BB {
     private String age;
     private String s1;
     private String s2;
+    private String s4;
 }
