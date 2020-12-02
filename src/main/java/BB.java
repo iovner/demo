@@ -13,4 +13,6 @@ public class BB {
     private String s2;
     private String s3;
     private String s4;
+
+    private String s6;
 }
