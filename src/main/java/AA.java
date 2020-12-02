@@ -9,4 +9,5 @@
 public class AA {
     private String s1;
     private String s2;
+    private String s3;
 }
