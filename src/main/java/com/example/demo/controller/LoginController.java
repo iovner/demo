@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.entity.UserModel;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,4 +22,9 @@ public class LoginController {
         return "welcome login page!";
     }
 
+    public static void main(String[] args) {
+        UserModel userModel = new UserModel();
+        userModel.setAa("aa");
+        System.out.println(userModel);
+    }
 }
