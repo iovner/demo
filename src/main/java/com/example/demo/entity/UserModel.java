@@ -14,5 +14,6 @@ import lombok.Data;
 public class UserModel extends User {
 
     private String aa;
+    private String bb;
 
 }
