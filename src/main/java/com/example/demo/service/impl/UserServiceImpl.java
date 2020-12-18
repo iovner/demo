@@ -26,4 +26,9 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllUser() {
         return userMapper.findAll();
     }
+
+    @Override
+    public Integer selectCount(String tableName) {
+        return userMapper.selectCount(tableName);
+    }
 }

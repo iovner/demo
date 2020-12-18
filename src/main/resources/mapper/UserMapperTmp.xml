@@ -140,7 +140,7 @@
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
     </update>
 
-    <select id="findAll" resultType="com.example.demo.entity.User">
+    <select id="findAll111" resultType="com.example.demo.entity.User">
         SELECT * FROM tb_user
     </select>
 </mapper>

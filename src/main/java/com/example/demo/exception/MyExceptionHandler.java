@@ -3,6 +3,7 @@ package com.example.demo.exception;
 import com.example.demo.entity.res.R;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * ClassName：MyExceptionHandler
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * @Author：duzhiguang@bjpowernode.com
  */
 @ControllerAdvice
+@ResponseBody
 public class MyExceptionHandler {
 
     @ExceptionHandler(value = {Exception.class})
