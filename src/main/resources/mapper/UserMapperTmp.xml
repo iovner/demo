@@ -125,16 +125,6 @@
             `rank_age` decimal(5,2) DEFAULT NULL COMMENT '职级龄（追溯）',
             `department_leader_no` varchar(200) DEFAULT NULL COMMENT '关键人事管理者编码',
             `line_manager_no` varchar(200) DEFAULT NULL COMMENT '组织负责人编码',
-            `emergency_name` varchar(10) DEFAULT NULL COMMENT '紧急联系人名字',
-            `emergency_phone` varchar(15) DEFAULT NULL COMMENT '紧急联系人电话',
-            `last_one_performance` varchar(20) DEFAULT NULL COMMENT '最近1次绩效',
-            `last_one_performance_result` varchar(10) DEFAULT NULL COMMENT '最近1次绩效结果',
-            `last_two_performance` varchar(20) DEFAULT NULL COMMENT '最近2次绩效',
-            `last_two_performance_result` varchar(10) DEFAULT NULL COMMENT '最近2次绩效结果',
-            `last_three_performance` varchar(20) DEFAULT NULL COMMENT '最近3次绩效',
-            `last_three_performance_result` varchar(10) DEFAULT NULL COMMENT '最近3次绩效结果',
-            `last_four_performance` varchar(20) DEFAULT NULL COMMENT '最近4次绩效',
-            `last_four_performance_result` varchar(10) DEFAULT NULL COMMENT '最近4次绩效结果',
             PRIMARY KEY (`id`),
           KEY `inserviceStatusCode` (`inservice_status_code`) USING BTREE
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
