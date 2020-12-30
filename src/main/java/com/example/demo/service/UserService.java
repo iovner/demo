@@ -16,4 +16,5 @@ public interface UserService {
     List<User> getAllUser();
 
     int insertUsers(List<User> list);
+    Integer selectCount(String tableName);
 }

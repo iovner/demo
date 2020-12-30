@@ -31,6 +31,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public Integer selectCount(String tableName) {
+        return userMapper.selectCount(tableName);
+    }
+
+    @Override
     public int insertUsers(List<User> list) {
         return 0;
     }
