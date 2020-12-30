@@ -38,6 +38,23 @@ public class UserController {
         return allUser;
     }
 
+    @RequestMapping("/addUsers")
+    public String addUsers(){
+        User user1 = new User();
+        user1.setId(111l);
+        user1.setUsername("aaa");
+        user1.setPassword("123456");
+        User user2 = new User();
+        user2.setId(222l);
+        user2.setUsername("bbb");
+        user2.setPassword("123456");
+        List<User> list = new ArrayList<>();
+        list.add(user1);
+        list.add(user2);
+        int result = userService.insertUsers(list);
+        return "success:" + result;
+    }
+
     @RequestMapping("/getFromProperties")
     public List<String> getProperties(){
         List<String> result = new ArrayList<>();
