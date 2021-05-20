@@ -17,6 +17,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ResponseBody
 public class MyExceptionHandler {
 
+    /**
+     *
+     * @param e
+     * @return
+     */
     @ExceptionHandler(value = {Exception.class})
     public R exceptionHandler(Exception e){
         R r = R.error(e.toString());

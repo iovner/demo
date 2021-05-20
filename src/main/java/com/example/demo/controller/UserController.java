@@ -8,6 +8,7 @@ import com.example.demo.entity.res.R;
 import com.example.demo.service.UserService;
 import com.example.demo.utils.MyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,7 +31,8 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
-    @Resource
+    @Autowired
+    @Qualifier("userServiceImpl")
     private UserService userService;
 
     private String name;
@@ -40,6 +42,10 @@ public class UserController {
     private Properties properties;
 
 
+    /**
+     * 获取所有用户
+     * @return 用户集合
+     */
     @RequestMapping("/getAllUser")
     public List<User> getAllUser(){
         List<User> allUser = userService.getAllUser();
@@ -108,7 +114,6 @@ public class UserController {
 
         bb();
         return R.ok("成功");
-
 
     }
 
